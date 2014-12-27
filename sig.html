@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Signature Capture test</title>
+</head>
+<body onload="setup()">
+	<div id="sig"></div>
+</body>
+<script type="text/javascript" src="src/signature.js"></script>
+<script type="text/javascript">
+function setup() {
+	var s = new Signature("sig", {
+		lineOffsetLeft : 0,
+		lineOffsetTop : 16,
+		width : 800, 
+		height : 600,
+		cursorIcon  : "images/writing9.png",
+		imageSaveURL : "saveImage.php",
+		backgroundColour : "#fff"
+	});
+}
+</script>
+</html>
